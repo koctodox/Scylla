@@ -14,11 +14,12 @@ trait Config {
   val httpInterface: String = conf getString s"$prefix.http.interface"
   val httpPort: Int = conf getInt s"$prefix.http.port"
 
-  //TODO: this is just a simple path
   val dbPath: String = s"$prefix.db"
 
-  //TODO: move to hard-code-configurations
-  val oneDay2Sec_86400: Int = 86400
+  val emailAddress: String = s"$prefix.email.address"
+  val emailPass: String = s"$prefix.email.pass"
+
+  val ONEDAYSECS_86400: Int = 86400
 
   //TODO: change it with actor-system-scheduler ...
   val jwtSecretKey: String = "jwt-secret-key"

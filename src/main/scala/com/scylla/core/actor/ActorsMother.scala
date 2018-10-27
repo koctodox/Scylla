@@ -1,4 +1,4 @@
-package com.scylla.cores.actor
+package com.scylla.core.actor
 
 import akka.actor.{Actor, ActorLogging}
 

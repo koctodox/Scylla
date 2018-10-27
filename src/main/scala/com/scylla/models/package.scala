@@ -1,6 +1,6 @@
 package com.scylla
 
-import com.scylla.cores.basics.{Marshaller, Marshallable}
+import com.scylla.core.basic.{Marshaller, Marshallable}
 import spray.json.DefaultJsonProtocol._
 import spray.json.RootJsonFormat
 

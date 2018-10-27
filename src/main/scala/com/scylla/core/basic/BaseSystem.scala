@@ -1,4 +1,4 @@
-package com.scylla.cores.basics
+package com.scylla.core.basic
 
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer

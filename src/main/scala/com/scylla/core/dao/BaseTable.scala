@@ -1,6 +1,6 @@
-package com.scylla.cores.dao
+package com.scylla.core.dao
 
-import com.scylla.cores.basics.TableWithId
+import com.scylla.core.basic.TableWithId
 import slick.jdbc.JdbcProfile
 
 trait BaseTable[A] {

@@ -2,7 +2,7 @@ package com.scylla.commons
 
 import java.util.UUID
 
-import com.scylla.cores.models.InterUserToken
+import com.scylla.core.models.InterUserToken
 import com.typesafe.scalalogging.LazyLogging
 import pdi.jwt.{Jwt, JwtAlgorithm, JwtClaim, JwtOptions}
 import spray.json._
@@ -15,7 +15,7 @@ class TokenConfig extends Config with LazyLogging {
 
   def encoding(body: String): String = {
     var clim = JwtClaim(body)
-    clim = clim.expiresIn(oneDay2Sec_86400.toLong)
+    clim = clim.expiresIn(ONEDAYSECS_86400.toLong)
     Jwt.encode(
       clim,
       jwtSecretKey,

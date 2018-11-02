@@ -37,6 +37,7 @@ lazy val root = project
         "joda-time" % "joda-time" % "2.7",
         "org.joda" % "joda-convert" % "1.7",
         "com.github.tototoshi" %% "slick-joda-mapper" % "2.3.0",
+        "ch.lightshed" %% "courier" % "0.1.4",
         "com.pauldijou" %% "jwt-core" % "0.18.0"
       )
     }

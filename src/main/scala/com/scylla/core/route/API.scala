@@ -1,4 +1,4 @@
-package com.scylla.cores.route
+package com.scylla.core.route
 
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route

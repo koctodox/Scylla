@@ -1,9 +1,9 @@
-package com.scylla.cores.route
+package com.scylla.core.route
 
 import akka.http.scaladsl.model.{HttpEntity, HttpResponse}
-import com.scylla.cores.models.Result
+import com.scylla.core.models.Result
 import com.scylla.commons.MessageCodes._
-import com.scylla.cores.basics.Marshallable
+import com.scylla.core.basic.Marshallable
 import spray.json._
 
 trait Results {
@@ -16,7 +16,7 @@ trait Results {
     response(obj.toJson.toString, status)
   }
 
-  def response: HttpResponse = {
+  def okResponse: HttpResponse = {
     response(Result(OK_200))
   }
 

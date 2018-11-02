@@ -1,4 +1,4 @@
-package com.scylla.cores.basics
+package com.scylla.core.basic
 
 import slick.lifted.Rep
 

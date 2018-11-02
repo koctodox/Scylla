@@ -20,7 +20,4 @@ trait Config {
   val emailPass: String = s"$prefix.email.pass"
 
   val ONEDAYSECS_86400: Int = 86400
-
-  //TODO: change it with actor-system-scheduler ...
-  val jwtSecretKey: String = "jwt-secret-key"
 }

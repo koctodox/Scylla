@@ -5,7 +5,7 @@ import javax.mail._
 import javax.mail.internet.{InternetAddress, MimeMessage}
 import com.scylla.commons.Config
 
-case class CustomSMTP() extends Config {
+case class ScyllaSMTP() extends Config {
 
   def sendMail(address: String, title: String, body: String): Boolean = {
     try {

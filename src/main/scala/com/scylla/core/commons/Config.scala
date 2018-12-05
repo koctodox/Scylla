@@ -1,4 +1,4 @@
-package com.scylla.commons
+package com.scylla.core.commons
 
 import com.typesafe.config
 import com.typesafe.config.ConfigFactory

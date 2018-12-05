@@ -1,9 +1,10 @@
 package com.scylla.core.util
 
 import java.util.Date
+
+import com.scylla.core.commons.Config
 import javax.mail._
 import javax.mail.internet.{InternetAddress, MimeMessage}
-import com.scylla.commons.Config
 
 case class ScyllaSMTP() extends Config {
 

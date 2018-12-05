@@ -1,20 +1,21 @@
 package com.scylla.commons
 
 import java.util.UUID
+
 import com.scylla.core.commons.CoreStaticActorRefs._
 import com.scylla.core.models.InterUserToken
-import com.typesafe.scalalogging.LazyLogging
 import pdi.jwt.{Jwt, JwtAlgorithm, JwtClaim, JwtOptions}
 import spray.json._
 import com.scylla.commons.MessageCodes._
 import com.scylla.core.actor.JWTSecretKeyGenerator.GetSecretKey
 import akka.pattern.ask
 import akka.util.Timeout
+import com.scylla.core.commons.ConfigMother
 import scala.concurrent.duration._
 import scala.concurrent.Await
 import scala.util.Try
 
-class TokenConfig extends Config with LazyLogging {
+class TokenConfig extends ConfigMother {
   implicit val timout: Timeout = Timeout(1.seconds)
   private val algorithm: JwtAlgorithm.HS256.type = JwtAlgorithm.HS256
   private val jwtOptions: JwtOptions = JwtOptions(expiration = true)

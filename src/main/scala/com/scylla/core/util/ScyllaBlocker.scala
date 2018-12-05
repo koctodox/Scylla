@@ -1,6 +1,6 @@
 package com.scylla.core.util
 
-import com.scylla.commons.Config
+import com.scylla.core.commons.Config
 
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._

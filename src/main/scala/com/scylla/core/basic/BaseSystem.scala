@@ -3,8 +3,9 @@ package com.scylla.core.basic
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
 import akka.util.Timeout
-import com.scylla.commons.Config
+import com.scylla.core.commons.Config
 import com.typesafe.scalalogging.LazyLogging
+
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContextExecutor
 

@@ -1,5 +1,3 @@
-import sbt.Keys.{mainClass, organization, version}
-
 val export = """^([^=]+)="?(.*?)"?$""".r
 
 lazy val commonSettings = Seq(
